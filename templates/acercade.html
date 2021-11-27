@@ -1,0 +1,219 @@
+{% extends "plantilla.html" %}
+
+{% block slogan %}
+<div class="row no-gutters slider-text align-items-center justify-content-center">
+    <div class="col-md-9 ftco-animate mb-5 text-center">
+        <p class="breadcrumbs mb-0"><span class="mr-2"><a href="{{url_for('index')}}">Inicio <i class="fa fa-chevron-right"></i></a></span> <span>Acerca de <i class="fa fa-chevron-right"></i></span></p>
+      <h2 class="mb-0 bread" style="color: #fff;">Acerca De</h2>
+    </div>
+</div>
+{% endblock %}
+
+{% block servicios %}
+<section class="ftco-intro">
+  <div class="container">
+    <div class="row no-gutters">
+        <div class="col-md-4 d-flex">
+            <div class="intro d-lg-flex w-100 ftco-animate">
+                <div class="icon">
+                    <span class="flaticon-support"></span>
+                </div>
+                <div class="text">
+                    <h2>Asesoría 24/7</h2>
+                    <p>Un pequeño río llamado Duden fluye por su lugar y lo abastece de la regelialia necesaria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="intro color-1 d-lg-flex w-100 ftco-animate">
+                <div class="icon">
+                    <span class="flaticon-cashback"></span>
+                </div>
+                <div class="text">
+                    <h2>Garantía de Reembolso</h2>
+                    <p>Un pequeño río llamado Duden fluye por su lugar y lo abastece de la regelialia necesaria.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex">
+            <div class="intro color-2 d-lg-flex w-100 ftco-animate">
+                <div class="icon">
+                    <span class="flaticon-free-delivery"></span>
+                </div>
+                <div class="text">
+                    <h2>Envío gratis &amp; garantizado</h2>
+                    <p>Un pequeño río llamado Duden fluye por su lugar y lo abastece de la regelialia necesaria.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block acercade %}
+<section class="ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(../static/images/about.jpg);"></div>
+        <div class="col-md-6 wrap-about pl-md-5 ftco-animate py-5">
+            <div class="heading-section">
+                <span class="subheading">Desde 1905</span>
+                <h2 class="mb-4">El deseo se encuentra con un Nuevo Gusto</h2>
+                <p>Un pequeño río llamado Duden fluye por su lugar y lo abastece de la regelialia necesaria. Es un país paradisíaco, en el que partes  de frases vuelan a tu boca.</p>
+                <p>En su camino se encontró con una copia. La copia advertía al Little Blind Text, que de donde venía se habría reescrito mil veces y todo lo que quedaba de su origen sería la palabra "y" y el Little Blind Text debería dar la vuelta y volver a lo suyo, país seguro.</p>
+                <p class="year">
+                    <strong class="number" data-number="115">0</strong>
+                    <span>Años de Experiencia en el Negocio</span>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block categorias %}
+<section class="ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-1.jpg);">
+                </div>
+                <h3>Brandy</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-2.jpg);">
+                </div>
+                <h3>Gin</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-3.jpg);">
+                </div>
+                    <h3>Rum</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-4.jpg);">
+                </div>
+                <h3>Tequila</h3>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-5.jpg);">
+                </div>
+                <h3>Vodka</h3>
+                </div>
+            </div>
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <div class="img" style="background-image: url(../static/images/kind-6.jpg);"></div>
+                <h3>Whiskey</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block testimoniales%}
+<section class="ftco-section testimony-section img" style="background-image: url(../static/images/bg_4.jpg);">
+  <div class="overlay"></div>
+<div class="container">
+<div class="row justify-content-center mb-5">
+  <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+        <span class="subheading">Testimonios</span>
+        <h2 class="mb-3">Clientes Felices</h2>
+  </div>
+</div>
+<div class="row ftco-animate">
+  <div class="col-md-12">
+    <div class="carousel-testimony owl-carousel ftco-owl">
+        <div class="item">
+            <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                <div class="text">
+                    <p class="mb-4">Me encanta ese vino que jamás hubiese comprado.</p>
+                    <div class="d-flex align-items-center">
+                        <div class="user-img" style="background-image: url(../static/images/person_1.jpg)"></div>
+                        <div class="pl-3">
+                            <p class="name">José Luis</p>
+                            <span class="position">Programador Junior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="testimony-wrap py-4">
+                <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                    <div class="text">
+                        <p class="mb-4">Quiero iniciar agradeciendole por su atención durante todo el tiempo de preparacion para mi boda. Su servicio fue impecable.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="user-img" style="background-image: url(../static/images/person_2.jpg)"></div>
+                            <div class="pl-3">
+                                <p class="name">Luis Angel</p>
+                                <span class="position">Administrador de ventas</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="item">
+        <div class="testimony-wrap py-4">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+          <div class="text">
+            <p class="mb-4">El 22 de febrero tuvimos la recepción de nuestra boda. Y todo fue increíble, el trato y la logística. Sin duda lo volvería escoger para cualquier actividad!</p>
+            <div class="d-flex align-items-center">
+                <div class="user-img" style="background-image: url(../static/images/person_3.jpg)"></div>
+                <div class="pl-3">
+                    <p class="name">Ernesto Godinez</p>
+                    <span class="position">Tester de aplicaciones AWS</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimony-wrap py-4">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+          <div class="text">
+            <p class="mb-4">Al equipo de Vino Mundo, Quiero agradecerles por brindar un excelente servicio y hermoso entorno.</p>
+            <div class="d-flex align-items-center">
+                <div class="user-img" style="background-image: url(../static/images/person_1.jpg)"></div>
+                <div class="pl-3">
+                    <p class="name">Carlos Pantoja </p>
+                    <span class="position">Developer PHP</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="testimony-wrap py-4">
+            <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+          <div class="text">
+            <p class="mb-4">La experiencia en general fue increíble, todo el equipo del restaurante fue super atento, servicial, y con una comida increíble.</p>
+            <div class="d-flex align-items-center">
+                <div class="user-img" style="background-image: url(../static/images/person_2.jpg)"></div>
+                <div class="pl-3">
+                    <p class="name">Jose Alfredo</p>
+                    <span class="position">Analista programador</span>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+{% endblock %}

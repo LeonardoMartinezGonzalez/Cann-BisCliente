@@ -1,0 +1,86 @@
+{% extends "plantilla.html" %}
+
+{% block slogan %}
+<div class="row no-gutters slider-text align-items-center justify-content-center slogan">
+    <div class="col-md-8 ftco-animate d-flex align-items-end">
+        <div class="text w-100 text-center">
+            <h1 class="mb-4">Cannabis  <span> Sinónimo</span> De  <span>Calidad de Vida</span>.</h1>
+            <p>
+                <a href="#" class="btn btn-primary py-2 px-4 color-boton">Comprar</a>
+                <a href="#" class="btn btn-white btn-outline-white py-2 px-4 color-boton-fondo" >Conocer más</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block categorias %}
+<section class="ftco-section ftco-no-pb">
+    <div class="container">
+    <div class="row">
+        {% for variedad in variedades %}
+        <div class="col-lg-2 col-md-4 ">
+            <div class="sort w-100 text-center ftco-animate">
+                <a href="?miVariedad={{variedad.idVariedad}}"> 
+                    <div class="img" style="background-image: url(../static/img/categorias/{{variedad.imagenVariedad}});"> </div>
+                </a>
+                <h3>{{variedad.nombreVariedad}}</h3>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</section>
+{% endblock %}
+
+{% block productos %}
+<section class="ftco-section">
+    <div class="container">
+    <div class="row justify-content-center pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Ofertas deliciosas</span>
+            <h2>Con su buen gusto</h2>
+        </div>
+    </div>
+    <div class="row" id="lista-productos">
+        <!-- Aqui se muestran los productos  -->
+        {% for producto in productos %}
+            <div class="col-md-3 d-flex">
+                <div class="product ftco-animate mi-producto">
+                    <div class="img d-flex align-items-center justify-content-center" style="background-image: url(../static/img/productos/{{producto.productoImagen}});">
+                        <div class="desc">
+                            <p class="meta-prod d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center agregar-carrito" data-id="{{producto.idProducto}}" ><span class="flaticon-shopping-bag"></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text text-center info-producto">
+                        {% if producto.productoDescuento %}
+                            <span class="sale">Rebaja</span> <!-- Rebaja -->
+                        {% endif %}
+                        <span class="category">{{producto.nombreVariedad}}</span><!--  Categoria -->
+                        <h2>{{producto.productoNombreCorto}}</h2> <!-- Nombre del vino -->
+                        <p class="mb-0">
+                            {% if producto.productoDescuento %}
+                                <span class="price price-sale">${{producto.productoPrecioNormal}}</span>
+                            {% endif %}
+                            <span class="price precio-producto">${{producto.productoPrecioOferta}}</span>
+                        </p> <!-- Precio de Oferta y precio Final -->
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <a href="{{url_for('productos')}}" class="btn btn-primary d-block">Ver todos los productos <span class="fa fa-long-arrow-right"></span></a>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock %}
+{% block misEscripts %}
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+{% endblock %}
